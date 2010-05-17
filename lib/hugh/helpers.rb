@@ -6,8 +6,8 @@ module Hugh
     end
     
     def hue_picker(object, method, options = {}, html_options = {})
-      ::ActionView::Helpers::InstanceTag.new(object, method, self, options.delete(:object)).to_hue_picker_tag(html_options).tap { |t| tid = t.send :tag_id } +
-        javascript_tag("#{tag_id}_hue_picker = new Hugh('#{tag_id}')")
+      instance_tag = ::ActionView::Helpers::InstanceTag.new(object, method, self, options.delete(:object))
+      instance_tag.to_hue_picker_tag(html_options) + javascript_tag(instance_tag.to_hue_picker_js(html_options))
     end
     
     module InstanceTag
@@ -16,6 +16,12 @@ module Hugh
         add_default_name_and_id(html_options)
         value = value(object)
         hidden_field_tag('', value, html_options)
+      end
+      
+      def to_hue_picker_js(html_options)
+        html_options = html_options.stringify_keys
+        add_default_name_and_id(html_options)
+        "#{tag_id}_hue_picker = new Hugh('#{tag_id}')"
       end
     end
     
