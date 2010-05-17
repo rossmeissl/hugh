@@ -5,13 +5,12 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "hugh"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{Rails 2/3 hue picker form helper}
+    gem.description = %Q{A slider for picking a color hue built with Scriptaculous and Prototype}
     gem.email = "andy@rossmeissl.net"
     gem.homepage = "http://github.com/rossmeissl/hugh"
     gem.authors = ["Andy Rossmeissl"]
     gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
-    # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError

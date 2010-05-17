@@ -1,0 +1,8 @@
+[hugh] Hugh assets have been installed in public/javascripts.
+[hugh] Please ensure the following is present your application layout:
+
+  javascript_include_tag :defaults
+  javascript_include_tag 'hugh'
+
+[hugh] Thanks.
+
