@@ -1,5 +1,12 @@
 .hugh-track {
-  width: 256px;
-  height: 19px;
-  background: url(images/hugh/spectrum.png) no-repeat;
+  width: 260px;
+  height: 21px;
+  background: url(images/hugh/spectrum.png) no-repeat 2px center;
+}
+
+.hugh-handle {
+  width: 5px;
+  height: 21px;
+  background: url(images/hugh/handle.png) no-repeat;
+  cursor: W-resize;
 }

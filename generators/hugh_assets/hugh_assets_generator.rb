@@ -19,6 +19,10 @@ if defined?(Rails) && Rails::VERSION::MAJOR >= 3
         File.join(File.dirname(__FILE__), 'templates', 'spectrum.png'),
         'public/stylesheets/images/hugh/spectrum.png'
       )
+      copy_file(
+        File.join(File.dirname(__FILE__), 'templates', 'handle.png'),
+        'public/stylesheets/images/hugh/handle.png'
+      )
       readme(File.join(File.dirname(__FILE__), 'templates', 'NOTES'))
     end
 
@@ -35,6 +39,7 @@ else
         m.directory('public/stylesheets/images/hugh')
         m.file('hugh.css', 'public/stylesheets/hugh.css')
         m.file('spectrum.png', 'public/stylesheets/images/hugh/spectrum.png')
+        m.file('handle.png', 'public/stylesheets/images/hugh/handle.png')
         m.readme('NOTES')
       end
     end

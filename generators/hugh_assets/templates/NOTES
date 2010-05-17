@@ -1,8 +1,9 @@
 [hugh] Hugh assets have been installed in public/javascripts.
+[hugh] Your application (or at least relevant views) must include Prototype, Scriptaculous, and Scriptaculous's Slider library (Control.Slider in slider.js)
 [hugh] Please ensure the following is present your application layout:
 
-  javascript_include_tag :defaults
   javascript_include_tag 'hugh'
+  stylesheet_link_tag 'hugh'
 
 [hugh] Thanks.
 
