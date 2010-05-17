@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{hugh}
-  s.version = "0.0.0"
+  s.version = "0.1.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Andy Rossmeissl"]
@@ -25,7 +25,10 @@ Gem::Specification.new do |s|
      "VERSION",
      "generators/hugh_assets/hugh_assets_generator.rb",
      "generators/hugh_assets/templates/NOTES",
+     "generators/hugh_assets/templates/handle.png",
+     "generators/hugh_assets/templates/hugh.css",
      "generators/hugh_assets/templates/hugh.js",
+     "generators/hugh_assets/templates/spectrum.png",
      "hugh.gemspec",
      "lib/hugh.rb",
      "lib/hugh/helpers.rb",
